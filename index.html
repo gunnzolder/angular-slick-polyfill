@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular-slick-polyfill test page</title>
+    <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick-theme.css">
+</head>
+<body>
+
+<style>
+    body {
+        background: #9E9E9E;
+        padding: 30px;
+        font-family: sans-serif;
+    }
+    div img {
+        margin: 0 auto;
+    }
+</style>
+
+<h1>Angular slick polyfill test:</h1>
+
+<slick dots=true  speed=100 slides-to-show=3 touch-move=false slides-to-scroll=1>
+    <div><img src="http://placehold.it/150x150" alt=""></div>
+    <div><img src="http://placehold.it/150x150" alt=""></div>
+    <div><img src="http://placehold.it/150x150" alt=""></div>
+    <div><img src="http://placehold.it/150x150" alt=""></div>
+    <div><img src="http://placehold.it/150x150" alt=""></div>
+    <div><img src="http://placehold.it/150x150" alt=""></div>
+    <div><img src="http://placehold.it/150x150" alt=""></div>
+</slick>
+<script src="node_modules/slick-carousel/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/slick-carousel/slick/slick.min.js"></script>
+<script src="dist/angular-slick-polyfill.min.js"></script>
+
+<script>
+
+    (function(){
+        $.ngSlickPolyfill();
+    })();
+
+</script>
+
+</body>
+</html>
