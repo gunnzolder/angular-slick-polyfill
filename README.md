@@ -39,6 +39,10 @@ $(function(){
 </slick>
 ```
 
+The only difference from the ngSlick directive is added functionality for breakpoint-dependent
+initializing using `breakpoint-min` and `breakpoint-max` attributes. E.g. if you want to initialize
+the slider on mobile only, add `breakpoint-max=767` to corresponding `<slick>` element.
+
 - If you wanna read about possible settings, go [here](http://kenwheeler.github.io/slick/#settings).
 
 That's it!
