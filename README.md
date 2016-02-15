@@ -17,9 +17,9 @@ Use [angular-slick](https://github.com/vasyabigi/angular-slick) directive withou
 
 ```html
 <script>
-  (function(){
-      $.ngSlickPolyfill();
-  })();
+$(function(){
+    $.ngSlickPolyfill();
+});
 </script>
 ```
 
